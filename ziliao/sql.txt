@@ -1,0 +1,8 @@
+﻿s_comm_user  游戏用户表
+num          id号
+comm_user    游戏名称
+comm_pass    登录密码
+comm_sex     性别
+comm_rgtime  注册时间
+comm_aqm     账号安全码
+comm_rg_ip   账号注册ip

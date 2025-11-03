@@ -1,0 +1,143 @@
+body {
+    font-size:18px;
+    background-image: url(/images/bg.jpg);
+    background-repeat: repeat-x;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+body div {
+    line-height: 30px;
+}
+
+a:visited{
+    color:#1e5494;
+}
+
+a{
+    color:#1e5494;
+    text-decoration: none;
+}
+
+.button_djy{
+    width:80px;
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    line-height:24px;
+    color:#FFF;
+    background-color:#3C6;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    font-size:16px;
+}
+
+#search{
+    width:235px;
+    height:32px;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    border:1px solid#ccc;
+    background-color:transparent;
+    transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+@media screen and (min-width:960px){
+    .zd_fangkuang_shixin{
+        font-size:30px;
+    }
+
+    .zd_fangkuang_kongxin{
+        font-size:28px;
+    }
+
+    .zd_fangkuang_div{
+        margin-top: -13px;
+        margin-left: -1px;
+    }
+}
+
+@media screen and (max-width:960px){
+    .zd_fangkuang_shixin{
+
+    }
+
+    .zd_fangkuang_kongxin{
+
+    }
+
+    .zd_fangkuang_div{
+        margin-top: -5px;
+        margin-left: -1px;
+    }
+}
+
+.faceul {
+    width:364px;
+    height:305px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.faceul li {
+
+    list-style-type:none;	/*去掉无序列表前面的符号*/
+    float:left;/*左浮动*/
+    width:50px;
+    height:38px;
+    margin-top:10px;
+
+}
+
+.font_jiacu{
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+.juwai{
+    color:gray;
+    line-height: 38px;
+}
+
+.juwai_li{
+    line-height: 38px;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+.module-title{
+    /*margin:20px 0 2px;*/
+    padding:0 5px;
+    height:20px;
+    line-height:20px;
+    border-bottom:4px solid #9FC6EC;
+    color:#000;
+    font-weight:bold;
+    padding-bottom: 2px;
+}
+
+.tx_img{
+    margin-bottom:-1.5px;
+    margin-right: 2px;
+    width:20px;
+    height:20px;
+}
+
+#search1{
+    width:82px;
+    height:38px;
+    background:#0086DB;
+    border:0;
+    border-radius:10px;
+    margin-top:5px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}

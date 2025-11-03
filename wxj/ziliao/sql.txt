@@ -1,0 +1,546 @@
+s_user      玩家信息表
+num         id号
+s_name      社区昵称
+g_name      游戏昵称
+sex         性别（默认为男）
+dj          等级
+exp         经验
+money       金币
+coin        元宝
+sy_hp       剩余气血
+state       玩家战斗状态（默认0，未处于战斗中，1-处于战斗中）
+sy_nl       剩余耐力（默认120）
+z_nl        总耐力（默认120）
+nl_hf_time  耐力恢复的时间
+fb_jindu    玩家当前的副本进度（默认1）
+tianfu      玩家天赋点数
+tf_wx       天赋增加的悟性（攻击）
+tf_lq       天赋增加的灵气（仙气）
+tf_jg       天赋增加的筋骨（防御）
+tf_xm       天赋增加的血脉（生命）
+tf_sf       天赋增加的身法（速度）
+yqs_cs      摇钱树已使用的次数
+yqs_next_time   摇钱树下次重置的时间
+pk_pm       PK排名
+pk_max_pm   PK最高排名
+pk_cs       PK次数
+pk_jf       PK积分
+pk_zjf      PK总积分（可用作活动）
+pk_next_time    PK下次重置的时间
+pk_jf_next_time PK领取每日积分的状态（为空或者时间小于现在的，则都可以领取）
+pk_gm_cs    每日PK购买的次数
+robot       是否为机器人（默认为0，表示不是，用于竞技场占位）
+rw_zx_jd    任务主线进度
+rw_zx_skill 任务击杀主线怪物数量
+bangpai     玩家帮派的名称
+bangpai_zw  帮派职位（1-帮主，2-副帮主，10-帮众）
+bangpai_qd  帮派签到
+bangpai_gx  帮派贡献
+nld_cs      耐力丹今日使用次数
+nld_next_time   耐力丹下次重置的时间
+cz_jf       充值积分（1元RMB=1积分）
+xl_hour         修炼的小时
+xl_start_time   修炼的开始时间
+xl_stop_time    修炼的结束时间
+xl_sx_dfsname   修炼双修的对方社区昵称
+zhizun_vip  至尊VIP是否开通（默认为0，表示未开通）
+yueka_next_time 月卡下次领取奖励的时间
+yueka_stop_time 月卡到期的时间
+gongxun     功勋（默认为0）
+df_sl       斗法胜利次数（默认为0）
+df_sb       斗法失败次数（默认为0）
+chenghao    玩家当前显示的称号
+mood        心情
+zhanli      战力
+meili       魅力
+xianlv      仙侣
+eaz         恩爱值（默认为0）
+love_time   结婚时间
+jiezhi      求婚所用戒指
+jiezhi_dj   戒指等级，默认为1
+songhb      送花总榜
+songhb_week 送花周榜
+shouhb      收花总榜
+shouhb_week 收花周榜
+enter       是否进行了游戏开局对话
+
+
+s_fuben_info1   大副本信息
+num     id号
+fb_name 副本名称
+fb_min_dj   副本最低等级
+fb_max_dj   副本最高等级
+
+
+s_fuben_info2   小副本信息
+num         id号
+fb_name     副本名称
+fb_jindu    副本进度
+fb_min_dj   副本最低等级
+fb_max_dj   副本最高等级
+fb_info1_num    该副本所对应的大副本的id号
+
+
+s_fuben_info3   小副本怪物信息
+num     id号
+fb_info2_num    该怪物对应的小副本的id号
+fb_jindu    该怪物所属的副本进度
+fb_gw_num   该副本的怪物id号
+
+
+s_guaiwu_all
+num     id号
+gw_name 怪物名称
+gw_dj   怪物等级
+gw_gj   怪物攻击
+gw_xq   怪物仙气
+gw_fy   怪物防御
+gw_bj   怪物暴击
+gw_rx   怪物韧性
+gw_hp   怪物气血
+
+
+s_wj_guaiwu
+num     id号
+s_name  社区昵称
+gw_name 怪物名称
+gw_dj   怪物等级
+gw_gj   怪物攻击
+gw_xq   怪物仙气
+gw_fy   怪物防御
+gw_bj   怪物暴击
+gw_rx   怪物韧性
+gw_sy_hp    怪物剩余血量
+gw_hp   怪物气血
+gw_lx   怪物类型（1-副本怪物，4-闯塔怪物）
+
+
+s_wj_fuben
+num     id号
+s_name  社区昵称
+fb_jindu    当前所在的副本进度
+fb_jieduan  当前所在的副本阶段
+fb_zhandou_gw 当前战斗的怪物id号(对应s_wj_guaiwu里面的num号)
+
+
+s_wj_talk   玩家聊天
+num         id号
+s_name      社区昵称
+towho       对谁说话
+towho_num   对谁说话的玩家id
+message     内容
+times       时间
+zb_num      装备id号
+
+
+s_zhuangbei_all 装备属性大全
+num     id号
+zb_name 装备名称
+zb_dj   装备等级
+zb_col  装备类型（wuqi-武器，yifu-衣服，xuezi-靴子，yaodai-腰带）
+zb_gj   装备攻击
+zb_xq   装备仙气
+zb_fy   装备防御
+zb_hp   装备气血
+zb_bj   装备暴击
+zb_rx   装备韧性
+zb_sd   装备速度
+
+
+s_wj_zhuangbei  玩家装备属性大全
+num     id号
+s_name  玩家社区昵称
+zb_name 装备名称
+zb_dj   装备等级
+zb_col  装备类型（wuqi-武器，yifu-衣服，xuezi-靴子，yaodai-腰带）
+zb_pinzhi   装备品质（默认为'真武'）
+zb_fs_gj   装备附属攻击
+zb_fs_xq   装备附属仙气
+zb_fs_fy   装备附属防御
+zb_fs_hp   装备附属气血
+zb_fs_bj   装备附属暴击
+zb_fs_rx   装备附属韧性
+zb_fs_sd   装备附属速度
+zb_used    装备是否穿戴（默认0，0-未穿戴，1-已穿戴）
+zb_kw1      装备孔位1是否开通（默认为-1，表示未开通）
+zb_kw2      装备孔位2是否开通（默认为-1，表示未开通）
+zb_kw3      装备孔位3是否开通（默认为-1，表示未开通）
+zb_kw4      装备孔位4是否开通（默认为-1，表示未开通）
+zb_kw5      装备孔位5是否开通（默认为-1，表示未开通）
+zb_kw6      装备孔位6是否开通（默认为-1，表示未开通）
+zb_kw7      装备孔位7是否开通（默认为-1，表示未开通）
+zb_kw8      装备孔位8是否开通（默认为-1，表示未开通）
+zb_kw9      装备孔位9是否开通（默认为-1，表示未开通）
+zb_kw10     装备孔位10是否开通（默认为-1，表示未开通）
+zb_cl_gj_dj 装备淬炼攻击等级（默认为0）
+zb_cl_fy_dj 装备淬炼防御等级（默认为0）
+zb_cl_hp_dj 装备淬炼气血等级（默认为0）
+zb_cl_xq_dj 装备淬炼仙气等级（默认为0）
+zb_cl_sd_dj 装备淬炼速度等级（默认为0）
+
+
+s_zhuangbei_shengji 装备升级消耗材料
+num         id号
+zb_name     装备名称
+zb_min_dj   装备最小等级
+zb_max_dj   装备最大等级
+wp_name     消耗的材料名称
+wp_count    消耗的材料数量
+xh_money    消耗的金币数量
+
+
+s_wupin_all   物品信息大全
+num             id号
+wp_name         物品名称
+wp_coin         物品元宝价格
+wp_bd           物品是否绑定（0为不绑定，1为绑定）
+wp_xfl          物品小分类（daoju-道具,baoshi-宝石,chenghao-称号,libao-礼包,xiangzi-箱子）
+wp_shop_fl      物品商店显示的分类（daoju-道具，cailiao-材料，baoxiang-宝箱）
+wp_zfl          物品总分类（wp-物品，bs-宝石，ch-称号，lb-礼包,hl-婚链）
+wp_shop         物品是否在商城出售,0表示不出售，1表示在商城出售
+wp_list         物品开出的奖励内容（wp,1,2~2,10000|wp,2,1~5,5000）格式为 内容分类,物品id,最小数量~最大数量,几率(几率按10000算)，用|分割下一个物品
+wp_note         物品说明
+
+
+s_wj_bag       玩家背包
+num             id号
+s_name          玩家社区名称
+wp_name         物品名称
+wp_coutns       物品数量
+wp_fenlei       物品分类（对应sx_wuping_all里面的总分类）
+wp_leixin       物品类型（H-物品，Y-药品）
+wp_bd           物品是否绑定
+
+
+s_wj_zhuangbei_xilian_tmp   玩家装备洗炼缓存记录
+num     id号
+s_name  社区昵称
+zb_num  装备的id号
+zb_gj_tmp   装备洗炼临时攻击
+zb_xq_tmp   装备洗炼临时仙气
+zb_fy_tmp   装备洗炼临时防御
+zb_hp_tmp   装备洗炼临时生命
+zb_bj_tmp   装备洗炼临时暴击
+zb_rx_tmp   装备洗炼临时韧性
+zb_sd_tmp   装备洗炼临时速度
+
+
+s_jingjie_all   境界信息
+num             id号
+jj_name         境界名称
+jj_dj           境界等级
+jj_gj           境界攻击
+jj_xq           境界仙气
+jj_fy           境界防御
+jj_hp           境界生命
+jj_bj           境界暴击
+jj_rx           境界韧性
+jj_sd           境界速度
+jj_tp_dj        境界突破所需等级
+jj_tp_money     境界突破所需金币
+
+
+s_jingjie_cailiao   境界突破材料
+num         id号
+jj_dj       境界等级
+wp_num      消耗的材料id
+wp_counts   消耗的材料数量
+
+
+s_gonggao       世界公告
+num         id号
+s_name      社区昵称
+s_name1     对方的社区昵称
+message     信息内容1
+message1    信息内容2
+xx_leixin   消息类型(xt-系统消息,cjbp-创建帮派,pk_top10-pk进入前十,qhcg-求婚成功)
+times       时间
+
+s_skill_all     (所有技能的介绍)
+num             技能id号，唯一
+skill_name      技能名称
+skill_fl        技能分类（zd-主动，bd-被动）
+skill_lx        技能类型(gj-攻击,fy-防御,sd-速度)
+skill_zhi       技能提升的值
+skill_cx        技能持续的回合数
+skill_cd        技能冷却的回合数
+skill_money     技能所学消耗金币
+
+s_wj_skill      玩家已学技能
+num     id号
+s_name  社区昵称
+skill_fl    技能分类（zd-主动，bd-被动）
+skill_num   已学的技能id
+skill_dj    已学的技能等级（默认为1）
+
+
+s_wj_zhandou_skill  玩家战斗已用技能记录
+num         id号
+s_name      社区昵称
+skill_num   技能id
+skill_lx    技能类型(gj-攻击,fy-防御,sd-速度)
+skill_zhi   技能增加的值
+skill_cx    技能持续的回合数
+skill_cd    技能冷却的回合数
+
+
+s_wj_zhandou_skill_pk  玩家战斗已用技能记录(pk中记录对手使用技能情况)
+num         id号
+s_name      社区昵称
+df_num      对方的id号
+df_sname    对方社区昵称
+skill_num   技能id
+skill_lx    技能类型(gj-攻击,fy-防御,sd-速度)
+skill_zhi   技能增加的值
+skill_cx    技能持续的回合数
+skill_cd    技能冷却的回合数
+
+
+s_wj_paimai     玩家拍卖信息
+num             id号
+s_name          玩家社区昵称
+wp_num          拍卖的物品id
+wp_counts       拍卖的物品数量
+wp_money        拍卖的物品价格
+wp_zfl          拍卖的物品总分类
+wp_start_time   物品拍卖开始时间
+wp_expire_time  物品拍卖结束时间
+
+
+s_wj_youxiang   玩家邮箱
+num             id号
+s_name          社区昵称
+wp_num          物品的id号
+wp_counts       物品的数量
+money           物品拍卖成功获得的金币
+lq_state        领取的状态（默认为0，表示未领取）
+dq_state        读取的状态（默认为0，表示未读取）
+yx_leixin       邮箱的类型（pmqx-拍卖取消,pmgq-拍卖过期,htfswp-后台发送物品）
+times           写入的时间
+
+
+w_wj_pk_wj      玩家pk的对方信息
+num             id号
+s_name          社区昵称
+df_num          对方的id号
+df_sname        对方的社区昵称
+ds_sy_hp        对方的剩余血量
+
+
+s_fuben_diaoluo 副本掉落
+num         id号
+fb_jindu    副本进度
+fb_jieduan  副本阶段
+wp_num      物品id
+wp_sl       物品数量
+wp_jilv     物品几率
+
+
+s_pk_duihuan        玩家PK积分兑换
+num         id号
+wp_id       物品的id号
+xh_jf       消耗的积分
+
+
+s_renwu           (任务内容表)
+num                     id号
+rw_jindu                任务主线id
+rw_biaoti               任务标题
+rw_mubiao               任务目标（指引的介绍）
+rw_skill_gw_num1        提交任务所需击杀怪物1的id号
+rw_jiangli_money        任务奖励的游戏币
+rw_jiangli_exp          任务奖励的经验
+rw_jiangli_wp1_id       任务奖励的物品1的id
+rw_jiangli_wp1_sl       任务奖励的物品1的数量
+rw_jiangli_wp2_id       任务奖励的物品2的id
+rw_jiangli_wp2_sl       任务奖励的物品2的数量
+rw_jiangli_wp3_id       任务奖励的物品3的id
+rw_jiangli_wp3_sl       任务奖励的物品3的数量
+rw_jiangli_wp4_id       任务奖励的物品4的id
+rw_jiangli_wp4_sl       任务奖励的物品4的数量
+rw_jiangli_wp5_id       任务奖励的物品5的id
+rw_jiangli_wp5_sl       任务奖励的物品5的数量
+
+
+s_bangpai_all       玩家帮派内容
+num         id号
+bp_name     帮派名称
+s_name      帮主的社区昵称
+bp_dj       帮派等级
+times       帮派创建的时间
+bp_ss_dj    帮派神兽等级
+
+
+s_bangpai_sq    玩家帮派入会申请
+num         id号
+s_name      社区昵称
+bp_num      申请加入的帮派id号
+times        申请时间
+
+
+s_wj_siliao 玩家私聊信息
+num     id号
+s_name  社区昵称
+xx_leixin   消息类型(siliao-私聊，hysq-好友申请)
+s_name1 对方的社区昵称
+message 信息内容
+yd_state    是否已读（默认为0，表示未读）
+times   发送时间
+
+
+s_wj_qiandao  玩家签到信息记录
+num         id号
+s_name      社区昵称
+qd_month    上次签到的月份
+qd_cs_dy    当月签到的总次数
+qd_next_time    下次可签到的时间
+qd_bq_cs    签到补签的次数
+qd_1        第1天签到的装备，0表示未签到，1表示签到
+qd_2        第2天签到的装备，0表示未签到，1表示签到
+qd_3        第3天签到的装备，0表示未签到，1表示签到
+qd_4        第4天签到的装备，0表示未签到，1表示签到
+qd_5        第5天签到的装备，0表示未签到，1表示签到
+qd_6        第6天签到的装备，0表示未签到，1表示签到
+qd_7        第7天签到的装备，0表示未签到，1表示签到
+qd_8        第8天签到的装备，0表示未签到，1表示签到
+qd_9        第9天签到的装备，0表示未签到，1表示签到
+qd_10       第10天签到的装备，0表示未签到，1表示签到
+qd_11       第11天签到的装备，0表示未签到，1表示签到
+qd_12       第12天签到的装备，0表示未签到，1表示签到
+qd_13       第13天签到的装备，0表示未签到，1表示签到
+qd_14       第14天签到的装备，0表示未签到，1表示签到
+qd_15       第15天签到的装备，0表示未签到，1表示签到
+qd_16       第16天签到的装备，0表示未签到，1表示签到
+qd_17       第17天签到的装备，0表示未签到，1表示签到
+qd_18       第18天签到的装备，0表示未签到，1表示签到
+qd_19       第19天签到的装备，0表示未签到，1表示签到
+qd_20       第20天签到的装备，0表示未签到，1表示签到
+qd_21       第21天签到的装备，0表示未签到，1表示签到
+qd_22       第22天签到的装备，0表示未签到，1表示签到
+qd_23       第23天签到的装备，0表示未签到，1表示签到
+qd_24       第24天签到的装备，0表示未签到，1表示签到
+qd_25       第25天签到的装备，0表示未签到，1表示签到
+qd_26       第26天签到的装备，0表示未签到，1表示签到
+qd_27       第27天签到的装备，0表示未签到，1表示签到
+qd_28       第28天签到的装备，0表示未签到，1表示签到
+qd_29       第29天签到的装备，0表示未签到，1表示签到
+qd_30       第30天签到的装备，0表示未签到，1表示签到
+qd_31       第31天签到的装备，0表示未签到，1表示签到
+
+
+s_chenghao_all  称号大全
+num         id号
+ch_name     称号名称
+ch_fl       称号分类（pt-普通称号，hd-活动称号）
+ch_gj       称号所加攻击（默认为0）
+ch_xq       称号所加仙气（默认为0）
+ch_fy       称号所加防御（默认为0）
+ch_hp       称号所加生命（默认为0）
+ch_sd       称号所加速度（默认为0）
+ch_bj       称号所加暴击（默认为0）
+ch_rx       称号所加韧性（默认为0）
+ch_jf       称号所加成就积分（默认为1）
+ch_note     称号说明
+
+
+s_wj_chenghao   玩家获得的称号
+num     id号
+s_name  社区昵称
+ch_name 称号名称
+ch_num  称号的id号
+ch_time 称号获得的时间
+
+
+s_wj_friends    玩家好友
+num     id号
+s_name  社区昵称
+df_num  对方的id号
+qinmidu 亲密度
+times   通过好友的时间
+
+
+s_wj_qiuhun 玩家求婚表
+num     id号
+s_name  社区昵称
+s_name1 对方的社区昵称
+times   求婚时间
+jiezhi  求婚的戒指
+state   该条信息的状态（默认为0,1-同意求婚，2-拒绝求婚）
+
+
+s_huodong_time  活动时间
+num     id号
+hd_name 活动名称(songshouhua-送收花周榜)
+hd_stop_time    活动结束时间
+
+
+s_duihuan_all   兑换列表
+num     id号
+dh_wp   兑换的物品id
+
+
+s_duihuan_all_list  兑换物品所需的材料
+num     id号
+dh_wp   兑换的物品id（对应s_duihuan_all列表）
+nd_fl   兑换所需的物品分类(money-灵石，coin-仙券，wp-物品)
+nd_wp   兑换所需的物品id
+nd_sl   兑换所需的物品数量
+
+
+s_df_wj_cs  斗法玩家次数限制
+num     id号
+s_name  社区昵称
+df_num  对方的id号
+df_cs   斗法次数
+df_stop_time    下次可斗法的重置时间
+
+s_admin     后台登录用户
+num         id号
+username    用户名
+password    密码
+
+s_ta_guaiwu 大雁塔怪物列表
+ta_ceng 大雁塔层数
+gw_id   该层的怪物id号
+
+s_ta_wj_jilu    玩家闯塔记录
+num             id号
+s_name          社区昵称
+ceng            当前玩家所在层数（默认为1）
+max_ceng        当前玩家所闯的最高层（默认为1）
+wabao           当前玩家已挖宝的次数（默认为0）
+xiangzi         当前玩家开箱子的状态（默认为0，表示未开，1表示已开）
+skill           是否击杀了守塔boss（默认为0，表示没有，1表示已击杀）
+next_time       玩家下次重置闯塔的时间
+
+s_ta_jiangli    大雁塔挖宝奖励列表
+num         id号
+ta_ceng     塔的层数
+jl_lx       奖励的类型(exp-灵气，wp-物品)
+jl_id       奖励的id（对物品有效）
+jl_sl       奖励的数量
+jl_jl       奖励的几率
+
+s_ta_jiangli_box    大雁塔宝箱奖励列表
+num         id号
+ta_ceng     塔的层数
+jl_lx       奖励的类型(exp-灵气，wp-物品)
+jl_id       奖励的id（对物品有效）
+jl_sl       奖励的数量
+jl_jl       奖励的几率
+
+s_wj_dongtai    玩家动态信息
+num     id号
+s_name  玩家社区昵称
+s_name1 对方玩家社区昵称
+xx_lx   消息类型(dfcg-对方斗法成功，dfsb-对方斗法失败,pkup-对方竞技场排名上升,shuangxiu-双修,songhua-对方送花)
+message 消息内容
+times   时间
+
+
+
+
+
+
+
+
